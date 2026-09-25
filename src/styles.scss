@@ -1,0 +1,84 @@
+/* Styles globaux de l'application E-Clinique */
+:root {
+  --eclinique-primary: #0b7a53;
+  --eclinique-primary-dark: #07513a;
+  --eclinique-accent: #38b878;
+  --eclinique-bg: #f3f8f5;
+}
+
+body {
+  background-color: var(--eclinique-bg);
+  color: #1d332a;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--eclinique-primary);
+  border-color: var(--eclinique-primary);
+}
+.btn-primary:hover {
+  background-color: var(--eclinique-primary-dark);
+  border-color: var(--eclinique-primary-dark);
+}
+
+.btn-save,
+.btn-save:hover,
+.btn-save:focus,
+.btn-save:active {
+  color: #fff !important;
+  background-color: var(--eclinique-primary) !important;
+  border-color: var(--eclinique-primary) !important;
+}
+
+.btn-save:hover,
+.btn-save:focus {
+  background-color: var(--eclinique-primary-dark) !important;
+  border-color: var(--eclinique-primary-dark) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.text-primary {
+  color: var(--eclinique-primary) !important;
+}
+
+.btn-primary,
+.btn-success,
+.btn-danger,
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-secondary {
+  color: #fff;
+  background-color: var(--eclinique-primary);
+  border-color: var(--eclinique-primary);
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-danger:hover,
+.btn-outline-primary:hover,
+.btn-outline-success:hover,
+.btn-outline-danger:hover,
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: var(--eclinique-primary-dark);
+  border-color: var(--eclinique-primary-dark);
+}
+
+.card-stat {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.badge-alerte {
+  background-color: #dc3545;
+}
+
+.table thead {
+  background-color: #eef3f9;
+}
+
+@media print {
+  .no-print { display: none !important; }
+}
