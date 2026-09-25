@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: `${window.location.protocol}//${window.location.hostname}:8282/api`
+  apiUrl: 'https://dk-eclinique-backend-production.up.railway.app/api'
 };
